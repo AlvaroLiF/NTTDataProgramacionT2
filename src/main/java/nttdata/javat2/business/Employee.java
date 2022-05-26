@@ -27,6 +27,7 @@ public class Employee {
 		this.id = idNumber;
 		idNumber++;
 	}
+
 	/**
 	 * Getter de la variable final MAXEMPLOYEES
 	 * 
@@ -42,7 +43,7 @@ public class Employee {
 	 * 
 	 * @return COMPANY
 	 */
-	
+
 	public static String getCompany() {
 		return COMPANY;
 	}
@@ -61,7 +62,7 @@ public class Employee {
 	 * 
 	 * @param category
 	 */
-	
+
 	public void setCategory(String category) {
 		this.category = category;
 	}
@@ -78,7 +79,7 @@ public class Employee {
 	/**
 	 * Método que comprueba que el código Hash del id no esté repetido
 	 */
-	
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
@@ -87,7 +88,7 @@ public class Employee {
 	/**
 	 * Método que comprueba que dos empleados no tengan el id repetido
 	 */
-	
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -101,12 +102,13 @@ public class Employee {
 	}
 
 	/**
-	 * Método toString para representar la cadena de texto con los valores del empleado
+	 * Método toString para representar la cadena de texto con los valores del
+	 * empleado
 	 */
-	
+
 	@Override
 	public String toString() {
-		return "El empleado con id "+id+", es "+name+", "+category+" que trabaja en " + getCompany();
+		return "El empleado con id " + id + ", es " + name + ", " + category + " que trabaja en " + getCompany();
 	}
 
 }
