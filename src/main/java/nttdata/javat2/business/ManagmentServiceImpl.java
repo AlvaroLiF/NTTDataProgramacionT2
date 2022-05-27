@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Método ManagmentServiceImpl
+ * Clase ManagmentServiceImpl
  * 
  * @author Alvaro L
  *
